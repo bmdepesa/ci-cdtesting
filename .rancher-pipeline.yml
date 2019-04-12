@@ -1,0 +1,10 @@
+stages:
+- name: test
+  steps:
+  - runScriptConfig:
+      image: busybox:latest
+      shellScript: |-
+        ls
+        echo "Hello world"
+timeout: 60
+notification: {}
